@@ -10,35 +10,24 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.jedidja.quest.Domain.Quest;
+
 /**
  * Created by Jedidja on 30 Jan 2018.
  */
 
-public class CustomAdapter extends ArrayAdapter<String> {
+public class CustomAdapter extends ArrayAdapter<Quest> {
 
-    private Integer[] explore;
-    private String[] category;
-    private Integer[] stripe;
-    private String[] description;
-    private Integer[] arrow;
-    private Activity context;
+    private Quest[] _quests;
+    private Activity _context;
 
     public CustomAdapter(Activity context,
-                         Integer[] explore,
-                         String[] category,
-                         Integer[] stripe,
-                         String[] description,
-                         Integer[] arrow) {
-        super(context, R.layout.activity_layout, category);
+                         Quest[] quests) {
+        super(context, R.layout.activity_layout, quests);
 
-        this.context = context;
-        this.explore = explore;
-        this.category = category;
-        this.stripe = stripe;
-        this.description = description;
-        this.arrow = arrow;
+        this._quests = quests;
+        this._context = context;
     }
-
 
     @NonNull
     @Override
@@ -46,7 +35,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
         View r = convertView;
         ViewHolder viewHolder = null;
         if (r == null) {
-            LayoutInflater layoutInflater = context.getLayoutInflater();
+            LayoutInflater layoutInflater = _context.getLayoutInflater();
             r = layoutInflater.inflate(R.layout.activity_layout, null, true);
             viewHolder = new ViewHolder(r);
             r.setTag(viewHolder);
@@ -54,11 +43,11 @@ public class CustomAdapter extends ArrayAdapter<String> {
         else {
             viewHolder = (ViewHolder) r.getTag();
         }
-        viewHolder.imageExplore.setImageResource(explore[position]);
-        viewHolder.textCategory.setText(category[position]);
-        viewHolder.imageStripe.setImageResource(stripe[position]);
-        viewHolder.textDescription.setText(description[position]);
-        viewHolder.imageArrow.setImageResource(arrow[position]);
+        viewHolder.imageExplore.setImageResource(R.drawable.explore_black_36dp);
+        viewHolder.textCategory.setText(_quests[position].QuestCategory.toString());
+        viewHolder.imageStripe.setImageResource(R.drawable.stripe_purple_56x0dp);
+        viewHolder.textDescription.setText(_quests[position].Description);
+        viewHolder.imageArrow.setImageResource(R.drawable.arrow_purple_24dp);
 
         return r;
     }
