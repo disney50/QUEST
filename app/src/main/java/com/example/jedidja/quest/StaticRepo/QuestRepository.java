@@ -15,7 +15,8 @@ public class QuestRepository {
             new Quest(QuestCategory.DESIGN,  "Build 1 page prototype"),
             new Quest(QuestCategory.ANDROID,   "Implement prototype"),
             new Quest(QuestCategory.DESIGN, "Research screenshots of list apps"),
-                new Quest(QuestCategory.BOOTSTRAP, "Implement Bootstrap in website")
+                new Quest(QuestCategory.BOOTSTRAP, "Implement Bootstrap in website"),
+                new Quest(QuestCategory.BOOTSTRAP, "Get new element")
         };
 
     }
