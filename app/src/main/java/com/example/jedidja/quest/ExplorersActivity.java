@@ -27,7 +27,7 @@ public class ExplorersActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent myIntent = new Intent(ExplorersActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(ExplorersActivity.this, ListViewActivity.class);
                 startActivity(myIntent);
             }
         };
