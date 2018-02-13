@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">QUEST</string>
     <string name="title_activity_explorer_list_activity">ExplorerListActivity</string>
+    <string name="new_explorer">New Explorer</string>
 </resources>
