@@ -1,15 +1,15 @@
 package com.example.jedidja.quest.Domain;
 
 /**
- * Created by anthoniedeklerk on 2018/02/05.
+ * Created by Jedidja on 07 Feb 2018.
  */
 
 public class Quest {
-    public QuestCategory QuestCategory;
-    public String Description;
+    public QuestCategories Categories;
+    public String Descriptions;
 
-    public Quest(QuestCategory category, String description){
-        QuestCategory = category;
-        Description = description;
+    public Quest(QuestCategories categories, String descriptions) {
+        Categories = categories;
+        Descriptions = descriptions;
     }
 }

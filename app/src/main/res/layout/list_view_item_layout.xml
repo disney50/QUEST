@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/image_view_explore_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/explore_black_36dp" />
+
+    <TextView
+        android:id="@+id/text_view_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view_explore_icon"
+        android:layout_marginTop="-13dp"
+        android:layout_alignStart="@+id/image_view_explore_icon"
+        android:layout_marginStart="48dp"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/image_view_stripe_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_view_categories"
+        android:layout_marginStart="-6dp"
+        android:layout_below="@+id/text_view_categories"
+        app:srcCompat="@drawable/stripe_purple_56x0dp" />
+
+    <TextView
+        android:id="@+id/text_view_descriptions"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_view_categories"
+        android:layout_below="@+id/image_view_stripe_icon"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/image_view_arrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view_explore_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/arrow_purple_24dp" />
+
+
+</RelativeLayout>

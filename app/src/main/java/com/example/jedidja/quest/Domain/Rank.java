@@ -5,5 +5,9 @@ package com.example.jedidja.quest.Domain;
  */
 
 public enum Rank {
-    ROOKIE, APPRENTICE, JOURNEYMAN, EXPERT, MASTER
+    ROOKIE,
+    APPRENTICE,
+    JOURNEYMAN,
+    EXPERT,
+    MASTER
 }
