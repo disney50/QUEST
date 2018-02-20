@@ -24,7 +24,7 @@
         android:layout_alignStart="@+id/image_view_explore_icon"
         android:layout_marginStart="48dp"
         android:textSize="20sp"
-        android:text="TextView" />
+        android:text="Categories" />
 
     <ImageView
         android:id="@+id/image_view_stripe_icon"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/text_view_categories"
         android:layout_below="@+id/image_view_stripe_icon"
-        android:text="TextView"
+        android:text="Descriptions"
         android:textSize="16sp" />
 
     <ImageView
