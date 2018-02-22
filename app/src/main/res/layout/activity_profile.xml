@@ -22,7 +22,7 @@
         android:layout_alignTop="@+id/image_view_background"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
-        app:srcCompat="@drawable/profile_round" />
+        app:srcCompat="@drawable/female_icon" />
 
     <TextView
         android:id="@+id/text_view_name_surname"
@@ -32,8 +32,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="24sp"
-        android:textColor="@color/colorAccent"
-        android:text="Name Surname" />
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/text_view_rank"
@@ -42,8 +41,16 @@
         android:layout_below="@+id/text_view_name_surname"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        android:text="Rank: Rank" />
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_rank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/text_view_email"
@@ -52,8 +59,7 @@
         android:layout_below="@+id/text_view_rank"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        android:text="Email: email@email.com" />
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

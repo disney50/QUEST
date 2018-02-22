@@ -36,7 +36,7 @@
         app:srcCompat="@drawable/stripe_purple_56x0dp" />
 
     <TextView
-        android:id="@+id/text_explorer_surname"
+        android:id="@+id/text_explorer_email"
         android:layout_width="268dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/text_view_explorer_name"

@@ -1,6 +1,7 @@
 package com.example.jedidja.quest.StaticRepo;
 
 import com.example.jedidja.quest.Domain.Explorer;
+import com.example.jedidja.quest.Domain.Gender;
 import com.example.jedidja.quest.Domain.Rank;
 
 /**
@@ -13,9 +14,14 @@ public class ExplorerRepository
     {
         return new Explorer[]
                 {
-                new Explorer("Ruan","Botha","Botha@gmail.com", Rank.EXPERT,"model1"),
-                new Explorer("Kyle","Venter","Venter@gmail.com", Rank.ROOKIE,"model1"),
-                new Explorer("Susan","Lood","Lood@gmail.com",Rank.APPRENTICE, "model1"),
+                new Explorer("Ruan Botha","Botha@gmail.com", Rank.EXPERT,"model1", Gender.MALE),
+                new Explorer("Kyle Venter","Venter@gmail.com", Rank.ROOKIE,"model1", Gender.MALE),
+                new Explorer("Susan Lood","Lood@gmail.com",Rank.APPRENTICE, "model1", Gender.FEMALE),
+                new Explorer("Mira Marais", "Marais@gmail.com", Rank.MASTER, "modell", Gender.FEMALE)
                 };
+    }
+
+    public Explorer GetMockProfile(){
+        return new Explorer("Jannie Vermeulen", "Vermeulen@gmail.com", Rank.JOURNEYMAN, "ASA", Gender.MALE);
     }
 }
