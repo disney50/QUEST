@@ -6,7 +6,7 @@
 
 
     <ImageView
-        android:id="@+id/image_view_explore_icon"
+        android:id="@+id/image_explore_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -16,39 +16,39 @@
         app:srcCompat="@drawable/explore_black_36dp" />
 
     <TextView
-        android:id="@+id/text_view_categories"
+        android:id="@+id/text_categories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_view_explore_icon"
+        android:layout_alignTop="@+id/image_explore_icon"
         android:layout_marginTop="-13dp"
-        android:layout_alignStart="@+id/image_view_explore_icon"
+        android:layout_alignStart="@+id/image_explore_icon"
         android:layout_marginStart="48dp"
         android:textSize="20sp"
-        android:text="TextView" />
+        android:text="Categories" />
 
     <ImageView
-        android:id="@+id/image_view_stripe_icon"
+        android:id="@+id/image_stripe_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/text_view_categories"
+        android:layout_alignStart="@+id/text_categories"
         android:layout_marginStart="-6dp"
-        android:layout_below="@+id/text_view_categories"
+        android:layout_below="@+id/text_categories"
         app:srcCompat="@drawable/stripe_purple_56x0dp" />
 
     <TextView
-        android:id="@+id/text_view_descriptions"
+        android:id="@+id/text_descriptions"
         android:layout_width="268dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/text_view_categories"
-        android:layout_below="@+id/image_view_stripe_icon"
-        android:text="TextView"
+        android:layout_alignStart="@+id/text_categories"
+        android:layout_below="@+id/image_stripe_icon"
+        android:text="Descriptions"
         android:textSize="16sp" />
 
     <ImageView
-        android:id="@+id/image_view_arrow_icon"
+        android:id="@+id/image_arrow_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_view_explore_icon"
+        android:layout_alignTop="@+id/image_explore_icon"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="12dp"
         app:srcCompat="@drawable/arrow_purple_24dp" />

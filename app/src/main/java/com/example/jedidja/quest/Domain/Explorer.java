@@ -5,15 +5,17 @@ package com.example.jedidja.quest.Domain;
  */
 
 public class Explorer {
-   public String FullName;
+   public String Name;
+   public String Surname;
    public String Email;
    public Rank Rank;
    public String Avatar;
    public Gender Gender;
 
-   public Explorer(String fullname, String email, Rank rank, String avatar, Gender gender)
+   public Explorer(String name, String surname, String email, Rank rank, String avatar, Gender gender)
    {
-       FullName = fullname;
+       Name = name;
+       Surname = surname;
        Email = email;
        Rank = rank;
        Avatar = avatar;

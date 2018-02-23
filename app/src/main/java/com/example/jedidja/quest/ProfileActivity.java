@@ -2,9 +2,11 @@ package com.example.jedidja.quest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.jedidja.quest.Domain.Explorer;
+import com.example.jedidja.quest.Domain.Gender;
 import com.example.jedidja.quest.StaticRepo.ExplorerRepository;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -18,16 +20,19 @@ public class ProfileActivity extends AppCompatActivity {
 
         Explorer explorer = repo.GetMockProfile();
 
-        TextView nameSurnameText = findViewById(R.id.text_view_explorer_name);
-        nameSurnameText.setText(explorer.FullName);
+        ImageView profileAvatarImage = findViewById(R.id.image_profile_avatar);
 
-        /* TextView rankText = findViewById(R.id.text_view_rank);
-        rankText.setText();
+        profileAvatarImage.setImageResource(R.drawable.female_avatar);
 
-        TextView genderText = findViewById(R.id.text_view_gender);
-        genderText.setText(); */
+        if(explorer.Gender == Gender.MALE) {
+            profileAvatarImage.setImageResource(R.drawable.male_avatar);
+        }
 
-        TextView emailText = findViewById(R.id.text_view_email);
-        emailText.setText(explorer.Email);
+        String fullName = explorer.Name + " " + explorer.Surname;
+
+        TextView explorerNameSurname = findViewById(R.id.text_explorer_fullname);
+        explorerNameSurname.setText(fullName);
+
+
     }
 }

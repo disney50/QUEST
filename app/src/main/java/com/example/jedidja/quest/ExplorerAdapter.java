@@ -42,7 +42,7 @@ public class ExplorerAdapter extends ArrayAdapter<Explorer> {
         else {
             viewHolder = (ExplorerAdapter.ViewHolder) r.getTag();
         }
-        viewHolder.textExplorerName.setText(_explorers[position].FullName);
+        viewHolder.textExplorerName.setText(_explorers[position].Name);
         viewHolder.textExplorerEmail.setText(_explorers[position].Email);
 
 
@@ -53,7 +53,7 @@ public class ExplorerAdapter extends ArrayAdapter<Explorer> {
         TextView textExplorerName;
         TextView textExplorerEmail;
         ViewHolder(View v) {
-             textExplorerName = v.findViewById(R.id.text_view_explorer_name);
+             textExplorerName = v.findViewById(R.id.text_explorer_name);
              textExplorerEmail = v.findViewById(R.id.text_explorer_email);
         }
     }

@@ -14,14 +14,14 @@ public class ExplorerRepository
     {
         return new Explorer[]
                 {
-                new Explorer("Ruan Botha","Botha@gmail.com", Rank.EXPERT,"model1", Gender.MALE),
-                new Explorer("Kyle Venter","Venter@gmail.com", Rank.ROOKIE,"model1", Gender.MALE),
-                new Explorer("Susan Lood","Lood@gmail.com",Rank.APPRENTICE, "model1", Gender.FEMALE),
-                new Explorer("Mira Marais", "Marais@gmail.com", Rank.MASTER, "modell", Gender.FEMALE)
+                new Explorer("Ruan", "Botha","Botha@gmail.com", Rank.EXPERT,"model1", Gender.MALE),
+                new Explorer("Kyle", "Venter","Venter@gmail.com", Rank.ROOKIE,"model1", Gender.MALE),
+                new Explorer("Susan", "Lood","Lood@gmail.com",Rank.APPRENTICE, "model1", Gender.FEMALE),
+                new Explorer("Mira", "Marais", "Marais@gmail.com", Rank.MASTER, "modell", Gender.FEMALE)
                 };
     }
 
     public Explorer GetMockProfile(){
-        return new Explorer("Jannie Vermeulen", "Vermeulen@gmail.com", Rank.JOURNEYMAN, "ASA", Gender.MALE);
+        return new Explorer("Jannie", "Vermeulen", "Vermeulen@gmail.com", Rank.JOURNEYMAN, "ASA", Gender.MALE);
     }
 }

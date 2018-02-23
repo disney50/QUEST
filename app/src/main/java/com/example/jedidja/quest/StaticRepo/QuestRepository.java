@@ -7,7 +7,7 @@ import com.example.jedidja.quest.Domain.QuestCategories;
  * Created by Jedidja on 07 Feb 2018.
  */
 
-public class QuestRepo {
+public class QuestRepository {
 
     public Quest[] GetAll() {
         return new Quest[]{

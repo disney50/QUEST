@@ -17,30 +17,15 @@ import android.widget.TextView;
 
 public class ListViewAdapter extends ArrayAdapter<Quest> {
 
-    /* private Integer[] explore;
-    private String[] category;
-    private Integer[] stripe;
-    private String[] description;
-    private Integer[] arrow; */
     private Quest[] quests;
     private Activity context;
 
     public ListViewAdapter(Activity context,
-                           Quest[] quests
-                           /* Integer[] explore,
-                           String[] category,
-                           Integer[] stripe,
-                           String[] description,
-                           Integer[] arrow */) {
-        super(context, R.layout.list_view_item_layout, quests);
+                           Quest[] quests) {
+        super(context, R.layout.quests_layout, quests);
 
         this.context = context;
         this.quests = quests;
-        /* this.explore = explore;
-        this.category = category;
-        this.stripe = stripe;
-        this.description = description;
-        this.arrow = arrow; */
     }
 
 
@@ -51,7 +36,7 @@ public class ListViewAdapter extends ArrayAdapter<Quest> {
         ViewHolder viewHolder = null;
         if (r == null) {
             LayoutInflater layoutInflater = context.getLayoutInflater();
-            r = layoutInflater.inflate(R.layout.list_view_item_layout, null, true);
+            r = layoutInflater.inflate(R.layout.quests_layout, null, true);
             viewHolder = new ViewHolder(r);
             r.setTag(viewHolder);
         }
@@ -76,11 +61,11 @@ public class ListViewAdapter extends ArrayAdapter<Quest> {
         ImageView imageArrow;
 
         ViewHolder(View v) {
-            imageExplore = v.findViewById(R.id.image_view_explore_icon);
-            textCategory = v.findViewById(R.id.text_view_categories);
-            imageStripe = v.findViewById(R.id.image_view_stripe_icon);
-            textDescription = v.findViewById(R.id.text_view_descriptions);
-            imageArrow = v.findViewById(R.id.image_view_arrow_icon);
+            imageExplore = v.findViewById(R.id.image_explore_icon);
+            textCategory = v.findViewById(R.id.text_categories);
+            imageStripe = v.findViewById(R.id.image_stripe_icon);
+            textDescription = v.findViewById(R.id.text_descriptions);
+            imageArrow = v.findViewById(R.id.image_arrow_icon);
         }
     }
 }
