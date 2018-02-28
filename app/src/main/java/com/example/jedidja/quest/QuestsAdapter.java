@@ -15,13 +15,13 @@ import android.widget.TextView;
  * Created by Jedidja on 30 Jan 2018.
  */
 
-public class ListViewAdapter extends ArrayAdapter<Quest> {
+public class QuestsAdapter extends ArrayAdapter<Quest> {
 
     private Quest[] quests;
     private Activity context;
 
-    public ListViewAdapter(Activity context,
-                           Quest[] quests) {
+    public QuestsAdapter(Activity context,
+                         Quest[] quests) {
         super(context, R.layout.quests_layout, quests);
 
         this.context = context;

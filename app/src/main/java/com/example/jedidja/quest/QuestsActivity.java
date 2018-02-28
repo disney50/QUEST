@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.example.jedidja.quest.Domain.Quest;
 import com.example.jedidja.quest.StaticRepo.QuestRepository;
 
-public class ListViewActivity extends AppCompatActivity {
+public class QuestsActivity extends AppCompatActivity {
 
     ListView listView;
 
@@ -21,7 +21,7 @@ public class ListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quests);
 
         listView = findViewById(R.id.list_view_quests);
-        ListViewAdapter listViewAdapter = new ListViewAdapter(this, quests);
-        listView.setAdapter(listViewAdapter);
+        QuestsAdapter questsAdapter = new QuestsAdapter(this, quests);
+        listView.setAdapter(questsAdapter);
     }
 }
